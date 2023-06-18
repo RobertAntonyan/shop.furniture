@@ -1,0 +1,62 @@
+.top {
+    width: 890px;
+    height: 439px;
+    /* background: linear-gradient(103.4deg, rgba(241, 250, 255, 0.88) 0.89%, #F1FAFF 101.61%); */
+    backdrop-filter: blur(77.5px);
+    border-radius: 1px;
+    display: flex;
+    align-items: center;
+    background-color: #F0FAFF;
+}
+
+.top .topText {
+    width: 405px;
+    height: 438px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.top .topText p {
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: 5%;
+    color: #7AC751;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.top .topText .mulish {
+    font-size: 27px;
+    line-height: 26px;
+    letter-spacing: 5%;
+    color: #515151B5;
+    font-family: 'mulish';
+}
+.top .topText h1 {
+   text-align: center;
+   font-size: 40px;
+}
+.top .topButton{
+    background-color: #7AC751;
+    color: white;
+    border: none;
+    width: 129px;
+    height: 40px;
+}
+.top .topPictures {
+    width: 350px;
+    height: 374px;
+}
+.top .chair1 {
+    width: 348px;
+    height: 372px;
+}
+.top .topProd{
+    width: 120px;
+    height: 374px;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}

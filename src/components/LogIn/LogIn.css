@@ -1,0 +1,66 @@
+.logIn{
+    margin: 0 auto;
+    width: 1170px;
+    height: 700px;
+    background-color: #EEEEEE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logSection{
+    width: 700px;
+    height: 500px;
+    padding: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+.logTitle{
+    width: 650px;
+    height: 50px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 2px #EDEDED;
+}
+.logTitle button{
+    width: 200px;
+    height: 40px;
+    background-color: #7AC751;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+button:hover{
+    background-color: coral;
+}
+.logInput{
+    width: 650px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+.logUser, .logPassword{
+    width: 644px;
+    height: 50px;
+    text-indent: 12px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.logUser::placeholder{
+    font-size: 20px;   
+}
+
+
+.logButton{
+    width: 150px;
+    height: 50px;
+    background-color: #7AC751;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 22px;
+}

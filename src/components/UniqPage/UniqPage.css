@@ -1,0 +1,42 @@
+.uniqPage{
+    margin: 0 auto;
+    width: 1170px;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    border: solid;
+}
+.uniqPage .uniq_block1,.uniq_block2{
+    width: 585px;
+    height: 500px;
+}
+.uniqPage .uniq_img{
+    width: 582px;
+   height: 496px;
+}
+.uniq_block2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.uniq_block2 h2{
+    margin-bottom: 28px;
+    font-weight: 800;
+}
+.uniqPage p{
+    font-size: 20px;
+    color: black;
+}
+.uniq_block2 .uniq_oldPrice{
+    text-decoration: line-through;
+}
+.uniq_block2 .uniq_btn{
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: #7AC751;
+    color: white;
+    font-size: 18px;
+}

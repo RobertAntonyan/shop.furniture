@@ -1,0 +1,59 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+.trending {
+    width: 1170px;
+    height: 905px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+}
+
+.trending .trendingTitle {
+    width: 1170px;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.trending .trendUl {
+    width: 700px;
+    height: 45px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.trending .trendingTitle ul li {
+    list-style: none;
+
+}
+
+.trending .trendingTitle ul li a {
+    color: black;
+    text-decoration: none;
+    margin-right: 50px;
+}
+.trending .trendingTitle span {
+    font-size: 16px;
+}
+.trending .topprod{
+    color: #7AC751;;
+}
+
+.trending .trendProduct{
+    width: 1168px;
+    height: 820px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}

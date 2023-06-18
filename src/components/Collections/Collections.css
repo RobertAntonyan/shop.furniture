@@ -1,0 +1,20 @@
+.menuCollection {
+    width: 260px;
+    height: 45px;
+    background: #F7F8FA;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: solid 1px #c7c7c7;
+}
+
+.menuCollection p {
+    margin-left: 25px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.02em;
+    color: #555555;
+}

@@ -1,0 +1,43 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+.item{
+    width: 270px;
+    height: 387px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.item > .itemImg{
+    width: 265px;
+    height: 285px;
+   
+}
+.item > .itemText {
+    width: 265px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.itemPrice .newPrice{
+   margin-right: 20px; 
+   font-size: 18px;
+   color: #7AC751;
+}
+.itemPrice  .oldPrice{
+   font-size: 18px;
+   color: #cccccc;
+    text-decoration: line-through;
+}
+.item .itemSale{
+    background-color: aqua;
+    top: 0;
+    left: 5px;
+    width: 30px;
+    position: absolute;
+}

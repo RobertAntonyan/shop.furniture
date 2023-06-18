@@ -1,0 +1,9 @@
+.shop{
+    margin: 0 auto;
+    width: 1170px;
+    min-height: 800px;
+ }
+.shop .section{
+    width: 1170px;
+    height: 510px;
+}

@@ -1,0 +1,54 @@
+.Logo {
+    margin: 0 auto;
+    width: 1170px;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  
+}
+
+.Logo .logoIcon {
+    width: 150px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+}
+.Logo .logoSearch{
+    width: 380px;
+    height: 28px;
+    display: flex;
+  
+}
+.Logo .icon-tabler {
+    color: #7AC751;
+    margin-right: 15px;
+    display: inline;
+}
+.Logo .logoSearch .search{
+    width: 350px;
+    border-color: #7AC751;
+    border-radius: 8px;
+}
+.Logo .logoIcon p {
+    font-size: 24px;
+    line-height: 28px;
+    display: inline;
+    color: black;
+}
+.Logo .icons{
+    width: 200px;
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+.Logo .svg{
+  margin-right: 15px;
+  display: block;
+}
+.icons button{
+    border: none;
+    background-color: inherit;
+}

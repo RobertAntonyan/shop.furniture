@@ -1,0 +1,55 @@
+.customer{
+    margin: 0 auto;
+    width: 1170px;
+    height: 447px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+.customer h2{
+    margin-top: 20px;
+}
+.customer img{
+    padding: 20px;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+}
+.customer .Box{
+    width: 900px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+ 
+}
+.customer .textBox{
+    width: 700px;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.customer .left{
+    width: 100px;
+    height: 120px;
+    display: flex;
+  
+}
+.customer .right{
+    width: 100px;
+    height: 120px;
+    display: flex;
+ 
+}
+.customer p{
+    margin-bottom: 30px;
+    color: black;
+    font-size: 16px;
+}
+.customer h4{
+    margin-top: 30px;
+}
+.customer .navigateLeft{
+  margin-top: 20px;
+}

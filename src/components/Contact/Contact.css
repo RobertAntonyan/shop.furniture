@@ -1,0 +1,60 @@
+.contact{
+    margin: 0 auto;
+    width: 1170px;
+    min-height: 500px;
+}
+.contact .map{
+    width: 1168px;
+    height: 455px;
+ 
+}
+.contact .worktime{
+    width: 1170px;
+    height: 300px;
+    display: flex;
+  
+}
+.worktime .workBlock1, .workBlock2, .workBlock3{
+    width: 390px;
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ 
+}
+.contact h3{
+    text-align: center;
+    font-weight: 600;
+}
+.contact p{
+    text-align: center;
+    display: block;
+    color: black;
+}
+.contact .sendEmail{
+    width: 1170px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #7AC751;
+}
+.sendEmail div{
+    width: 700px;
+}
+.sendEmail h1,p{
+    text-align: center;
+    color: white;
+}
+.sendEmail p{
+    color: white;
+}
+.sendEmail button{
+    width: 200px;
+    height: 40px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+}

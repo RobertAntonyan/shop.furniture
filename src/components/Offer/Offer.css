@@ -1,0 +1,79 @@
+.offer{
+    width: 1170px;
+    height: 510px;
+    display: flex;
+    justify-content: space-between;
+}
+.offer .bigBlock{
+    width: 653px;
+    height: 510px;
+    position: relative;
+}
+.offer .smallBlock{
+    width: 485px;
+    height: 247px;
+    margin-bottom: 15px;
+}
+.offer .bigBlock .smallBlocks{
+    width: 487px;
+    height: 248px;
+    margin: 0 auto;
+    display: flex;
+    /* position: relative; */
+}
+.offer .bigImg{
+    width: 662px;
+    height: 507px;
+}
+.offer .smallImg{
+    width: 480px;
+    height: 243px;
+}
+.bigBlock .content_1{
+    position: absolute;
+    z-index: 1;
+    top: 100px;
+    left: 100px;
+}
+.content_1 h3{
+    margin-bottom: 10px;
+}
+.content_1 h4{
+    color: #7AC751;
+    margin-bottom: 10px;
+}
+.content_1 h5{
+    color: #B9B9B9;
+}
+.smallBlock .content_2{
+    position: absolute;
+    z-index: 2;
+    top: 220px;
+    right: 550px; 
+}
+.content_2 h3{
+    margin-bottom: 10px;
+}
+.content_2 h4{
+    color: #7AC751;
+    margin-bottom: 10px;
+}
+.content_2 h5{
+    color: #B9B9B9;
+}
+.smallBlock .content_3{
+    position: absolute;
+    z-index: 1;
+    top: 500px;
+    right: 510px; 
+}
+.content_3 h3{
+    margin-bottom: 10px;
+}
+.content_3 h4{
+    color: #7AC751;
+    margin-bottom: 10px;
+}
+.content_3 h5{
+    color: #B9B9B9;
+}

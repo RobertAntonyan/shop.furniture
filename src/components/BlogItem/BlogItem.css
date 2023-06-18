@@ -1,0 +1,27 @@
+.blogItem{
+    width: 835px;
+    height: 300px;
+    margin: 0 auto;
+    display: flex;
+    margin-bottom: 20px;
+}
+.blogItem .itemImage, .blogitemText {
+    width: 430px;
+    height: 295px;
+
+}
+.blogItem :hover .blogitemText{
+    transform: scale(0.2);
+}
+.itemImage .blogPic{
+    width: 428px;
+    height: 292px;
+}
+.blogitemText{
+    padding: 30px;
+    background-color: white;
+}
+.blogitemText h2,h3 {
+    margin-bottom: 20px;
+    font-weight: 400;
+}

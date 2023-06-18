@@ -1,0 +1,40 @@
+.postItem {
+    width: 275px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    border-bottom: solid 1px #e7e5e5;
+    padding-left: 10px;
+}
+
+.postItem .postdate {
+    width: 50px;
+    height: 65px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 5px;
+
+}
+
+.postdate h2,
+span {
+    margin: 0;
+    padding: 0;
+}
+
+.postdate span {
+    font-weight: 100;
+    color: #7a7878;
+}
+
+.postItem .postText {
+    width: 220px;
+    height: 65px;
+    padding-left: 20px;
+
+}
+
+.postItem .postText span {
+    font-size: 20px;
+}

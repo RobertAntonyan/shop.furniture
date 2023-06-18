@@ -1,0 +1,27 @@
+/* body {
+    margin: 0;
+} */
+.serviceitem{
+    width: 218px;
+    height: 58px;
+    display: flex;
+    justify-content: space-around;
+}
+.serviceImageblock{
+    width: 50px;
+}
+
+.serviceitem .servicetext{
+    width: 200px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.servicetext .serviceP{
+    color: black;
+    font-size: 14px; 
+    margin-top: 0;
+    margin-bottom: 0;   
+}
