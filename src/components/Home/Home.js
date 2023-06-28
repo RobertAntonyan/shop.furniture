@@ -8,10 +8,17 @@ import TrendingProoducts from '../TrendingProducts/TrendingProoducts'
 import Footer from '../Footer/Footer'
 import Customer from '../Customer/Customer'
 import Logo from '../Logo/Logo'
+import { useSelector } from 'react-redux'
+import { selectCurrentUser } from '../../store/slices/login/loginSlice'
+
 
 function Home(currentUser, setCurrentUser) {
 const navigate = useNavigate()
 const {pathname} = useLocation()
+
+const user = useSelector(selectCurrentUser)
+
+// console.log(user);
   const titles = [
     {
       id: '1',
@@ -60,8 +67,7 @@ const {pathname} = useLocation()
 
   return (
     <div className='Home'>
-        {/* <Logo /> */}
-      <section>
+         <section>
         <div className='homeMenu'>
 
           {

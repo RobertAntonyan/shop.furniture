@@ -1,6 +1,7 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { Garbage } from '../../SVGS/SVG';
 import './CartItem.css'
+import { deleteItems, minusItems, plusItems } from '../../store/slices/cart/cartSlice';
 
 function CartItem({ id, img, title, description, newPrice, count }) {
 const cart = useSelector(state => state.cart)
@@ -22,12 +23,7 @@ const plusItem = (id) => {
     //   })
 
     // ])
-      dispatch({
-        type: 'plusItem',
-        payload: {
-          id
-          }
-      })
+      dispatch(plusItems(id))
 
     }
 
@@ -44,12 +40,8 @@ const plusItem = (id) => {
   //       return item
   //     })
   //   ])
-      dispatch({
-        type: 'minusItem',
-        payload: {
-          id
-        }
-      })
+      dispatch(minusItems(id))
+     
 
    }
   
@@ -57,12 +49,8 @@ const plusItem = (id) => {
     // setCart([
     //   ...cart.filter(item => item.id !== id)
     // ])
-    dispatch({
-      type: 'deleteItem',
-      payload: {
-        id
-      }
-    })
+    dispatch(deleteItems(id))
+  
   }
 
 

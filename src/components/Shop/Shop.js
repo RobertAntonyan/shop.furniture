@@ -7,12 +7,12 @@ import Customer from '../Customer/Customer'
 
 
 
-function Shop({productData, setProductData}) {
+function Shop() {
 
   return (
     <div className='shop'>
         <Offer />
-        <Products productData={productData} setProductData={setProductData} />
+        <Products  />
         <Customer />
       <Footer />
     </div>

@@ -2,6 +2,8 @@ import React from 'react'
 import './UniqPage.css'
 import { useNavigate, useParams } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
+import { initialProductData } from '../../store/slices/cart/cartUI'
+import { add_To_Cart, selectCart } from '../../store/slices/cart/cartSlice'
 
 
 
@@ -11,8 +13,9 @@ function UniqPage() {
     const params = useParams()
     const navigate = useNavigate()
     const dispatch = useDispatch()
-    const product = useSelector(state => state.productData)
+    const product = initialProductData
     const currentProduct = product.find(el => el.id === params.id)
+
     const addToCart = () => {
         //  if (cart.some(product => product.id === params.id)) {
         //         setCart([
@@ -37,12 +40,14 @@ function UniqPage() {
         //             }
         //         ])
         //     }
-        dispatch({
-            type: 'ADD_TO_CART',
-            payload: {
-                id: params.id
-            }
-        })
+        // dispatch({
+        //     type: 'add_To_Cart',
+        //     payload: {
+        //         id: params.id
+        //     }
+        // })
+        dispatch(add_To_Cart(params.id))
+        
     }
 
 

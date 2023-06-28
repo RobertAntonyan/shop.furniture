@@ -1,13 +1,14 @@
 import React from 'react'
 import './Products.css'
 import ProductItem from '../ProductItem/ProductItem'
+import { initialProductData } from '../../store/slices/cart/cartUI'
 import { useSelector } from 'react-redux'
-
+import { selectCart } from '../../store/slices/cart/cartSlice'
 
 
 function Products() {
+const productData = initialProductData
 
-const productData = useSelector((state) => state.productData)
   return (
     <div className='products'>
         <div   className='productTitle'>

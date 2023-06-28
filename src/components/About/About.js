@@ -1,8 +1,9 @@
 import './About.css'
 import Images from '../../Images/index'
 import Footer from '../Footer/Footer'
-function About() {
 
+
+function About() {
   return (
     <div className='about'>
       <div className='aboutMe'>

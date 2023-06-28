@@ -1,53 +1,79 @@
 import React, { useEffect, useRef } from 'react'
 import './Registr.css'
 import { useNavigate } from 'react-router-dom'
-
 import { useDispatch, useSelector } from 'react-redux'
-import {  selectFormInfo, setFormInfo, toggleInput} from '../../store/store'
+import { selectFormInfo, setFormInfo, set_Form_Info } from '../../store/slices/registr/registrSlice'
 
-
-function Registr({formInfo,setFormInfo, currentUser, setCurrentUser }) {
+function Registr() {
   const formRef = useRef(null)
   const navigate = useNavigate(null)
   const dispatch = useDispatch()
-  
-  
-    const {firstName, lastName, password} = useSelector(selectFormInfo)
-  
+
+
+  //  const [{firstname: {value: userId}}, password: {value: pass}] = currentUser
+
+
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    //  const currentUser = formInfo.find(el => el.firstName === firstName && el.lastName === lastName && el.password === password);
-    //  const { firstName: { value: firstName }, lastName: { value: lastName }, password: { value: password }, zipCode: { value: zipCode }, city: { value: city }, email: { value: email }, phone: { value: phone } } = formRef.current
-    //   setCurrentUser([
+    const { firstName: { value: firstName },
+      lastName: { value: lastName },
+      password: { value: password },
+      // zipCode: { value: zipCode }, 
+      // city: { value: city },
+      // email: { value: email },
+      // phone: { value: phone }
+    } = formRef.current
+
+
+
+    // const currentUser = currentUser.find(el => el.firstName === firstName && el.lastName === lastName && el.password === password);
+    // setCurrentUser([
     //   ...currentUser,
     //   {
-    //     ...formInfo
-    //   }
-    // ])
+    //       ...formInfo
+    //     }
+    //   ])
+
     // setFormInfo({
     //   firstName: '',
     //   lastName: '',
     //   password: ''
     // })
-   
-    // const formInfo = {
-    //   firstName: e.target.firstName.value
-    // }
-    // navigate('/login')
-    
-      
-    const { firstName: { value: firstName }, lastName: { value: lastName }, password: { value: password } } = formRef.current
+
+
+    navigate('/login')
+    const formInfo = {
+      firstName: firstName,
+      lastName: lastName,
+      password: password
+    }
+    dispatch(set_Form_Info(formInfo))
+
     formRef.current.reset()
-    console.log(firstName, lastName, password);
   }
-  
+
+
   const handleChange = (e) => {
+
     // setFormInfo({
     //   ...formInfo,
     //   [name]: value,
     // })
 
-     }
+    const { name, value } = e.target
+
+    // dispatch({
+    //   type: 'toggleInput',
+    //   payload: {
+    //     [name]: value
+    //   }
+    // })
+
+
+
+  }
+
   return (
     <div className='registr'>
       <div className='forms'>
@@ -57,9 +83,9 @@ function Registr({formInfo,setFormInfo, currentUser, setCurrentUser }) {
         </div>
         <div className='formInputs'>
           <form ref={formRef} onSubmit={handleSubmit}>
-            <input onChange={handleChange}  name='firstName' className='firstInput' placeholder='First name:*' type='text' />
-            <input  name='lastName' className='lastInput' placeholder='Last name:*' type='text' />
-            <input  name='password' className='companyInput' placeholder='Password:' type='password' />
+            <input onChange={handleChange} value={selectFormInfo.firstName} name='firstName' className='firstInput' placeholder='First name:*' type='text' />
+            <input onChange={handleChange} value={selectFormInfo.lastName} name='lastName' className='lastInput' placeholder='Last name:*' type='text' />
+            <input onChange={handleChange} value={selectFormInfo.password} name='password' className='companyInput' placeholder='Password:' type='password' />
             <input name='zipCode' className='zipInput' placeholder='Zip code:*' />
             <input name='city' className='cityInput' placeholder='City:' />
             <input name='email' className='emailInput' placeholder='Email:*' type='text' />

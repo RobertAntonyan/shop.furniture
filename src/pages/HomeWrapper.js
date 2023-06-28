@@ -14,7 +14,6 @@ function HomeWrapper() {
             <path d="M4 6L20 6" stroke="#000000" strokeWidth={2} strokeLinecap="round" />
           </svg>
           <p>ALL COLLECTIONS</p>
-
         </div>
 
 
